@@ -2,5 +2,5 @@
 
 FROM docker:17.12.0-ce-dind
 
-ADD release/linux/amd64/drone-docker /bin/
+ADD release/linux/amd64/drone-docker-gcr /bin/ /bin/
 ENTRYPOINT ["/usr/local/bin/dockerd-entrypoint.sh", "/bin/drone-docker"]
